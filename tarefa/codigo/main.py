@@ -18,7 +18,7 @@ async def titanic(Sex:int,Age:float, Lifeboat:int, Pclass:int):
         return {
             'survived': bool(dados[0]),
             'status': 200,
-            'message': 'Deu tudo certo \o' if bool(dados[0]) else 'Não sobreviveu',
+            'message': 'Sobreviveu \o' if bool(dados[0]) else 'Não sobreviveu',
         }
     except Exception:
         return {
